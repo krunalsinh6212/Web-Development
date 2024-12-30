@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+td{
+    border: 2px solid white;
+}
+p{
+    background-color: aquamarine;
+}
+a{
+    background-color: red;
+}
+/* div{ 
+    background-color: chartreuse;
+}*/
+span{
+    background-color: aqua;
+}
+.red{
+    color: red;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+#firstdiv{
+    /* background-color: red; */
+}
