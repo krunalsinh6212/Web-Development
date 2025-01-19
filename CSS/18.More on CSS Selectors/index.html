@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+         /* .box::first-line{
+            color:yellow
+         } */
+
+        /* .boxes *{
+            border:2px solid black;
+            color:blue;
+        }
+        
+        .box,[data-color="primary"] {
+            padding-top:30px;
+        } */
+
+        /* .box:nth-child(odd){
+            background-color: brown;
+        } */
+
+        /* .box:nth-last-child(1){
+            background-color: blue;
+        } */
+
+        .boxes::before{
+            content: "This way content can be dynamically inserted before by CSS";
+            color: blue;
+        }
+        
+        .boxes::after{
+            content: "This way content can be dynamically inserted after by CSS";
+            color: red;
+        }
+
+        ::selection{
+            color:aqua;
+            background-color: blueviolet;
+        }
+
+        .box::first-letter{
+            color:red;
+            font-size: 30px;
+        }
+
+        input::placeholder{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates porro perspiciatis quasi minima illum distinctio repellat recusandae ipsa consequatur inventore!</div>
+        <div data-color="primary" class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <input type="text" placeholder="Type your name">
+    </div>
+</body>
+</html>

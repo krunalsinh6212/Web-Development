@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+</head>
+<body>
+    <h1>CSS Specificity</h1>
+    <h2>Cascade Algorithm</h2>
+    <p>The cascade algorithm has 4 distinct stages.</p>
+    <ol>
+        <li><strong>Position and order of appearance:</strong>the order in which your CSS rules appear</li>
+        <li><strong>Specificity:</strong>an algorithm that determines which CSS selector has the strongest match</li>
+        <li><strong>Origin:</strong>the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS</li>
+        <li><strong>Importance</strong>some CSS rules are weighted more heavily than others, especially with the !important rule type
+            Lets look into all these one by one</li>
+    </ol>
+    <p><strong>Order of Specificity is:</strong></p>
+    <p>!important>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</p>
+    <h3>Specificity calculation</h3>
+    <ul>
+        <li>Universal Selector: 0</li>
+        <li>Element selectors and pseudo-elements: 1</li>
+        <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+        <li>ID selectors: 100</li>
+        <li>Inline styles: 1000</li>
+        <li>!important: 10000</li>
+    </ul>
+</body>
+</html>
